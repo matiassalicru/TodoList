@@ -5,7 +5,7 @@ import { todoReducer } from "./todoReducer";
 import { FuncContext } from "./UserContext";
 
 const init = () => {
-  return JSON.parse(localStorage.getItem("todos") || []);
+  return JSON.parse(localStorage.getItem("todos")) || [];
 };
 
 export const TodoApp = () => {
